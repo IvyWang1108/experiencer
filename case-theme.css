@@ -1,0 +1,83 @@
+/* Shared case-study palette, drawn from the homepage's glowing stars. */
+:root {
+  color-scheme: dark;
+  --paper: #120d1e;
+  --paper-2: #1c152c;
+  --ink: #f6e3cd;
+  --ink-soft: #d2c9df;
+  --ink-faint: #aaa0bd;
+  --line: #493b5b;
+  --blue: #d0b5ef;
+  --ochre: #f6e3cd;
+  --stamp: #cfabff;
+  --lego-red: #e5b9d8;
+  --lego-blue: #d0b5ef;
+  --lego-yellow: #f6e3cd;
+  --lego-green: #bfb8ea;
+  --wn-deep: #0e0918;
+  --wn-forest: #d0b5ef;
+  --wn-sage: #493b5b;
+  --wn-mist: #1c152c;
+  --wn-glow: #f6e3cd;
+  --wn-cream: #f6e3cd;
+  --hs-navy: #0e0918;
+  --hs-teal: #d0b5ef;
+  --hs-mint: #1c152c;
+  --hs-blue: #292039;
+  --hs-warm: #120d1e;
+  --sc-black: #0e0918;
+  --sc-blue: #d0b5ef;
+  --sc-pink: #f6e3cd;
+  --sc-violet: #cfabff;
+  --sc-grid: #493b5b;
+}
+body {
+  background: radial-gradient(ellipse at 85% 0%, #261a38 0, transparent 650px), var(--paper);
+  color: var(--ink);
+}
+::selection { background: #d0b5ef; color: #120d1e; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+.form-visual, .problem-callout, .commerce-visual, .task-cards article,
+.scorecards .critical, .critical-finding {
+  background: var(--paper-2);
+  color: var(--ink);
+}
+.visual-label, .fake-check, .problem-callout span { color: var(--blue); }
+.fake-label small, .fake-field, .scorecards .critical p { color: var(--ink-soft); }
+.fake-field { border-color: var(--line); }
+.fake-field.focused { border-color: var(--blue); color: var(--ink); }
+th { background: #292039; color: var(--ink); }
+.project-facts, .commerce-visual, .commerce-visual span,
+.wn-facts, .hs-facts { border-color: var(--line); }
+.lego-problem { box-shadow: 10px 10px 0 #352542; }
+.wn-actions a, .hs-actions a { border-color: var(--blue); }
+.wn-actions a:first-child, .hs-actions a:first-child {
+  background: var(--blue); color: var(--paper);
+}
+.wn-actions a:hover, .hs-actions a:hover { background: var(--ink); color: var(--paper); }
+.wn-visual {
+  background: radial-gradient(ellipse at 50% 45%, #493255, #21162f 55%, #120d1e);
+}
+.orb {
+  background: radial-gradient(circle at 35% 25%, #d0b5ef, #785890 45%, #30203e 85%);
+  box-shadow: 0 0 65px #cfabff30, inset -12px -15px 30px #120d1e80;
+}
+.orb span { color: #fff2df; }
+.wn-dark p, .hs-dark > p, .sc-dark .section-copy { color: var(--ink-soft); }
+.contribution, figure > div, .dialogue-flow span, .tech-grid article,
+.artifact-grid div, .tech-orbit span, .tech-orbit .core,
+.installation-grid figure div { border-color: var(--line); }
+.dialogue-flow span, .problem-card, .problem-card p, .hs-dark,
+.sc-dark, .sc-final, .sc-hero-media { color: var(--ink); }
+.dialogue-flow small, .artifact-grid small, .sc-hero-media p,
+.media-placeholder, .sc-final span { color: var(--ink-faint); }
+.query { background: var(--paper); border-color: var(--blue); }
+.search-visual i { color: var(--ink); }
+.problem-card span, .hs-dark .hs-label, .sc-label, .gesture-grid span { color: var(--blue); }
+.analysis-flow li { border-color: var(--blue); }
+.ethics-grid { background: var(--line); }
+.sc-hero-media { background: radial-gradient(circle at 50% 50%, #352344, transparent 65%), var(--sc-black); }
+.tech-orbit .core { background: radial-gradient(circle, #352344, var(--sc-black)); }
+.concept-flow li, .prototype-grid ul { border-color: var(--blue); }
+.tower-shape { background: linear-gradient(90deg, #30233e 0 40%, #715784 40% 60%, #30233e 60%); }
+.future { background: linear-gradient(var(--paper), var(--paper-2)); }

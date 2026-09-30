@@ -1,0 +1,52 @@
+/* The homepage universe meets a quiet ocean. */
+body[data-page="about"]{
+  --paper:#08090e;--paper-2:#12141e;--ink:#f0ecdf;
+  --ink-soft:#c7c6cf;--ink-faint:#9293a3;--line:#ffffff20;
+  --blue:#d0b5ef;--ochre:#b6adca;
+  background:#08090e;color:var(--ink);isolation:isolate;
+}
+.about-atmosphere{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;}
+.about-atmosphere::before{content:"";position:absolute;inset:-45px;transform:translate3d(0,var(--ocean-shift,0px),0);will-change:transform;
+  background:linear-gradient(180deg,#08090ef7 0%,#08090edb 38%,#080d18c7 75%,#08090ee8),
+  url("assets/ocean-background.png") center bottom / cover no-repeat;}
+.about-stars{position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(circle at 18% 24%,#ddd4ef 0 1px,transparent 1.5px),
+  radial-gradient(circle at 78% 63%,#ddd4ef 0 .7px,transparent 1.2px),
+  radial-gradient(circle at 45% 80%,#d3e7eb 0 .7px,transparent 1.2px);
+  background-size:257px 283px,347px 317px,409px 389px;}
+.about-waves{position:absolute;bottom:-30px;left:-5%;width:110%;height:42%;fill:none;stroke:#a9c7df;stroke-width:1;opacity:.24;transform:translate3d(var(--wave-x,0px),var(--wave-y,0px),0);will-change:transform;}
+.about-waves path{transform:translateX(var(--ripple-x,0px));}
+.about-waves path:nth-child(even){transform:translateX(calc(var(--ripple-x,0px) * -1));}
+.about-waves path:nth-child(2){opacity:.65}.about-waves path:nth-child(3){opacity:.4}.about-waves path:nth-child(4){opacity:.22}
+.site-nav{background:#08090edb;border-color:#ffffff0f;backdrop-filter:blur(12px)}
+.site-nav .mark span{font-size:.8rem}
+.page-head{padding-top:calc(var(--nav-h) + 70px);border-bottom-color:#ffffff14}
+.page-head h1{font-weight:300;letter-spacing:-.025em;max-width:20ch}
+.eyebrow{color:#b6adca;font-size:.6rem;letter-spacing:.18em}
+.eyebrow::before{background:#c6b1df;width:4px;height:4px;box-shadow:0 0 10px #d0b5ef77}
+.about-layout{grid-template-columns:minmax(220px,320px) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:start}
+.about-photo{display:block;margin:0;aspect-ratio:auto;background:none;border:0;letter-spacing:normal;text-transform:none;}
+.portrait-water{position:relative;isolation:isolate;aspect-ratio:1;border-radius:50%;overflow:hidden;background:#142b3b;
+  border:1px solid #cbd4ff88;
+  box-shadow:0 0 0 5px #b2ceff08,0 0 28px #9fc9f133,0 0 65px #c0a2eb24;}
+.about-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center;border:0;border-radius:50%;box-shadow:none;filter:grayscale(1) contrast(.94) brightness(.86);mix-blend-mode:screen}
+.portrait-water::before{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(ellipse at 28% 19%,#e5f7ff42,transparent 35%),
+  radial-gradient(circle at 43% 37%,transparent 40%,#192d4955 67%,#060d22dc 100%);
+  box-shadow:inset 3px 3px 14px #c5edff66,inset -9px -12px 26px #9e91df44;}
+.portrait-water::after{content:"";position:absolute;inset:0;z-index:3;border-radius:inherit;pointer-events:none;
+  background:repeating-linear-gradient(180deg,transparent 0 3px,#aedfff18 3px 4px),
+  linear-gradient(125deg,#95dafb13,transparent 45%,#c9a0f724);
+  mix-blend-mode:screen;opacity:.65;}
+.about-photo figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:16px;font-size:.65rem;color:#d9cfdf}
+.about-photo figcaption span{color:#9894aa}
+.about-copy p{color:#c7c6cf;line-height:1.85;font-size:.96rem}
+.about-copy h2{font-weight:400;color:#eee5f4}
+.ocean-note{margin:34px 0 10px;padding:4px 0 4px 22px;border-left:1px solid #a5c2df66}
+.ocean-note .eyebrow{color:#a9c7df;margin-bottom:12px}
+.ocean-note p{font-family:var(--f-display);font-style:italic;font-size:1.25rem;line-height:1.6;margin-bottom:0;color:#d3dce9}
+.skill-tags li{color:#d0b5ef;border-color:#d0b5ef30;border-radius:24px;background:#d0b5ef05}
+.site-footer{background:#08090e99;border-color:#ffffff14}
+@media(max-width:800px){.about-layout{grid-template-columns:1fr}.about-photo{width:min(320px,100%);max-width:320px;position:static}.page-head{padding-top:calc(var(--nav-h) + 42px)}}
+@media(max-width:640px){.site-nav .mark span{display:none}.nav-links{background:#08090ef5}.about-waves{height:30%}}
+@media(prefers-reduced-motion:reduce){.about-waves,.about-waves path,.about-atmosphere::before{transform:none;will-change:auto}}

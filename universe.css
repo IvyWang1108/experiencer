@@ -1,0 +1,58 @@
+/* A quiet universe, with stable project targets and discoverable stars. */
+body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-faint:#9293a3;--line:#2c2c3b;--blue:#d0b5ef;background:#08090e;color:var(--ink)}
+.site-nav{background:rgba(8,9,14,.85);border-bottom:1px solid #ffffff0f}
+.site-nav .mark span{font-size:.8rem}
+.universe{position:relative;isolation:isolate;min-height:850px;height:100svh;max-height:1200px;overflow:hidden;background:radial-gradient(ellipse at 50% 53%,#30283e44,transparent 50%),#08090e}
+.starfield{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1}
+.universe-intro{position:absolute;top:calc(var(--nav-h) + 34px);width:100%;text-align:center;padding:0 22px;pointer-events:none}
+.eyebrow{font-family:var(--f-mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:#a9a6b7}
+.universe-intro h1{font-size:clamp(2.7rem,5vw,5rem);font-weight:300;letter-spacing:-.035em;margin:6px 0}
+.universe-intro>p:last-child{font-size:.85rem;color:#b5b2c1}
+.project-cluster{position:absolute;left:50%;top:54%;width:660px;height:370px;transform:translate(-50%,-50%);z-index:3}
+.project-particle{position:absolute;display:flex;align-items:center;flex-direction:column;justify-content:center;gap:5px;min-height:62px;width:172px;padding:7px 5px;color:#e7e1ed;text-align:center;cursor:pointer;transform:translate(-50%,-50%);border:0;background:none;transition:color .2s}
+.particle-spark{height:78px;width:78px;display:block;flex:none;border-radius:50%;background:#242335;border:1px solid #ead9ff99;box-shadow:0 0 9px #e7d0ff55,0 0 29px #b48fe633,0 0 54px #b48fe618;transition:box-shadow .25s,transform .25s;animation:orb-float 6s ease-in-out infinite alternate;overflow:hidden}
+.particle-spark img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.particle-2 .particle-spark,.particle-5 .particle-spark{animation-delay:-2s}
+.particle-3 .particle-spark,.particle-6 .particle-spark{animation-delay:-4s}
+.particle-4 .particle-spark,.particle-7 .particle-spark{animation-delay:-1s}
+@keyframes orb-float{from{transform:translateY(-3px)}to{transform:translateY(3px)}}
+.particle-name{font-size:.71rem;letter-spacing:.025em;text-shadow:0 2px 7px #000,0 0 18px #000}
+.particle-detail{font-family:var(--f-mono);font-size:.53rem;color:#c6b7d9;opacity:0;transition:opacity .2s;text-shadow:0 0 9px #000}
+.project-particle:hover,.project-particle:focus-visible{color:#fff}
+.project-particle:hover .particle-detail,.project-particle:focus-visible .particle-detail{opacity:1}
+.project-particle:hover .particle-spark,.project-particle:focus-visible .particle-spark{animation-play-state:paused;scale:1.08;box-shadow:0 0 13px #eadbff99,0 0 38px #cfabff66}
+.project-particle:focus-visible,.fact-star:focus-visible{outline:1px solid #dbcae7;outline-offset:4px;border-radius:4px}
+.particle-1{left:27%;top:17%}.particle-2{left:65%;top:10%}.particle-3{left:82%;top:46%}.particle-4{left:69%;top:80%}.particle-5{left:37%;top:92%}.particle-6{left:18%;top:64%}.particle-7{left:49%;top:47%}
+.fact-star{position:absolute;width:54px;height:54px;z-index:4;display:grid;place-items:center;color:#817e95;cursor:pointer}
+.star-cross{font-size:19px;transition:color .3s,text-shadow .3s,transform .3s}
+.fact-label{position:absolute;top:46px;width:175px;font-family:var(--f-display);font-size:1.1rem;color:#eee7fa;opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .25s,transform .25s;pointer-events:none;text-shadow:0 2px 10px #000}
+.fact-label small{display:block;margin-top:5px;font-family:var(--f-body);font-size:.65rem;color:#a7a1b7}
+.fact-star:hover .star-cross,.fact-star:focus-visible .star-cross,.fact-star.is-lit .star-cross{color:#fff4de;text-shadow:0 0 12px #ffe5c0,0 0 35px #c7a0ff;transform:rotate(45deg) scale(1.35)}
+.fact-star:hover .fact-label,.fact-star:focus-visible .fact-label,.fact-star.is-lit .fact-label{opacity:1;visibility:visible;transform:translateY(0)}
+.fact-1{left:13%;top:28%}.fact-2{right:12%;top:26%}.fact-3{left:5%;top:65%}.fact-4{right:5%;top:64%}.fact-5{left:23%;top:82%}.fact-6{right:21%;top:83%}
+.fact-3 .fact-label{left:0;text-align:left}.fact-4 .fact-label{right:0;text-align:right}
+.universe-guide{position:absolute;bottom:99px;width:100%;text-align:center;color:#d2c9db;font-size:.7rem;letter-spacing:.03em;padding:0 20px;pointer-events:none}
+.universe-guide small{display:block;color:#8d879e;font-size:.61rem;margin:8px auto 0;max-width:560px;line-height:1.6}
+.universe-guide a{pointer-events:auto;color:#d2c9db;text-decoration:underline;text-underline-offset:3px}
+.universe-guide a:hover{color:#fff}
+.guide-dot{display:inline-block;width:4px;height:4px;background:#f5d6af;border-radius:50%;margin:0 8px 2px 0}
+.universe-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);padding:10px;font-family:var(--f-mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.16em;color:#aaa2b9}
+.universe-about{max-width:850px;margin:auto;padding:90px var(--edge);text-align:center}
+.universe-about>p:last-child{font-family:var(--f-display);font-weight:300;font-size:clamp(1.15rem,2vw,1.7rem);line-height:1.6;color:#c2bacb;margin-top:25px}
+.index-strip{max-width:1200px;margin:auto;padding:40px var(--edge) 90px;scroll-margin-top:100px}
+.strip-head{margin-bottom:24px}.strip-head h2{font-size:2rem;font-weight:300}
+.entry-row:hover,.entry-row:focus-visible{background:var(--blue);color:var(--paper)}
+.site-footer{background:#08090e}
+@media(max-width:700px){
+ .site-nav .mark span{display:none}
+ .universe{min-height:880px;height:100svh}
+ .universe-intro{top:100px}
+ .project-cluster{width:100%;max-width:450px;height:350px;top:52%}
+ .project-particle{width:112px}.particle-name{font-size:.64rem}.particle-detail{font-size:.48rem}
+ .particle-spark{height:58px;width:58px}
+ .particle-1{left:24%;top:12%}.particle-2{left:73%;top:15%}.particle-3{left:81%;top:48%}.particle-4{left:73%;top:81%}.particle-5{left:33%;top:96%}.particle-6{left:20%;top:62%}.particle-7{left:45%;top:39%}
+ .fact-1{left:9%;top:26%}.fact-2{right:9%;top:26%}.fact-3{left:9%;top:73%}.fact-4{right:9%;top:73%}.fact-5,.fact-6{display:none}
+ .fact-label{width:145px;font-size:.95rem}.fact-1 .fact-label{left:0}.fact-2 .fact-label{right:0}
+ .universe-guide{bottom:66px}.universe-scroll{bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
