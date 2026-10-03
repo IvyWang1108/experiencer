@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="UX accessibility research case study on designing forms for blind and low-vision users.">
-<title>Designing Forms for Independence — Ivy Wang</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="case-study.css?v=1">
-<link rel="stylesheet" href="case-theme.css?v=1"></head>
+<title>Investigating Ways to Enhance Form-Filling Accessibility for Blind Users — Ivy Wang</title>
+<link rel="stylesheet" href="styles.css?v=responsive-2">
+<link rel="stylesheet" href="case-study.css?v=responsive-2">
+<link rel="stylesheet" href="case-theme.css?v=responsive-2"></head>
 <body data-page="research">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <nav class="site-nav" aria-label="Primary navigation">
@@ -23,15 +23,12 @@
   <header class="cs-hero">
     <div class="cs-hero-copy">
       <span class="cs-kicker">UX Accessibility Research</span>
-      <h1>Designing Forms for Independence</h1>
+      <h1>Investigating Ways to Enhance Form-Filling Accessibility for Blind Users</h1>
       <p class="cs-lede">Understanding how blind and low-vision users navigate digital and paper forms—and how accessible design can protect their privacy, confidence, and independence.</p>
     </div>
-    <div class="form-visual" role="img" aria-label="Abstract accessible form interface with clearly labeled fields, keyboard focus, and confirmation states">
-      <span class="visual-label">Accessible form anatomy</span>
-      <span class="fake-label">Full name</span><span class="fake-field focused">Keyboard focus</span>
-      <span class="fake-label">Date of birth <small>Format: MM / DD / YYYY</small></span><span class="fake-field">Clear instructions</span>
-      <span class="fake-check">✓ Selection state announced</span>
-    </div>
+    <figure class="accessible-hero-image">
+      <img src="assets/accessible-forms-conversation.png" alt="Abstract speech bubbles with audio waves flowing into an online form, with a highlighted input field and checked box." width="1254" height="1254">
+    </figure>
     <dl class="project-facts">
       <div><dt>Project type</dt><dd>Academic UX accessibility research</dd></div>
       <div><dt>Role</dt><dd>Primary UX Researcher and Lead Interviewer</dd></div>
@@ -70,8 +67,41 @@
   </section>
 
   <section class="cs-section analysis-section" aria-labelledby="analysis-title"><div><span class="section-number">06 / Research analysis</span><h2 id="analysis-title">Making patterns visible</h2><p>Interview data was analyzed through affinity mapping in FigJam, thematic clustering of participant experiences and quotes, identification of repeated barriers, and priority mapping based on user impact and frequency. Findings were then translated into design recommendations.</p></div>
-    <div class="artifact-placeholder" role="img" aria-label="Placeholder for affinity map or research synthesis artifact"><span>Research artifact placeholder</span><strong>Affinity map / synthesis preview</strong><small>Replace with an actual research image when available</small></div>
+    <div class="affinity-bundle" role="region" aria-roledescription="carousel" aria-label="Interview excerpts grouped by affinity theme">
+      <h3>From voices to themes</h3>
+      <p class="affinity-intro">Explore the excerpts behind four affinity clusters.</p>
+      <div class="affinity-filters" aria-label="Jump to an affinity theme">
+        <button type="button" data-affinity-theme="0" aria-pressed="true">Paper & trust</button>
+        <button type="button" data-affinity-theme="1" aria-pressed="false">Digital barriers</button>
+        <button type="button" data-affinity-theme="2" aria-pressed="false">Error recovery</button>
+        <button type="button" data-affinity-theme="3" aria-pressed="false">AI assistance</button>
+      </div>
+      <div class="affinity-deck" id="affinity-deck">
+<figure class="interview-quote affinity-slide" data-theme="0" role="group" aria-roledescription="slide" aria-label="1 of 15"><span class="affinity-theme">Paper & trust</span><blockquote><p>“I can read a Braille form, but I cannot fill it out in a way that someone else can read.”</p></blockquote><figcaption>Participant 1</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="0" role="group" aria-roledescription="slide" aria-label="2 of 15" hidden><span class="affinity-theme">Paper & trust</span><blockquote><p>“I cannot fill [paper forms] out at all. I need someone to do it for me, and that takes a lot of trust.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="0" role="group" aria-roledescription="slide" aria-label="3 of 15" hidden><span class="affinity-theme">Paper & trust</span><blockquote><p>“Anytime anything appears in print, I first panic, because it’s like, okay, more junk for me, more paper to lose.”</p></blockquote><figcaption>Participant 3</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="1" role="group" aria-roledescription="slide" aria-label="4 of 15" hidden><span class="affinity-theme">Digital barriers</span><blockquote><p>“Sometimes there’s a checkbox and you try to check that checkbox, and it just doesn’t want to check because the form is not very accessible.”</p></blockquote><figcaption>Participant 3</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="1" role="group" aria-roledescription="slide" aria-label="5 of 15" hidden><span class="affinity-theme">Digital barriers</span><blockquote><p>“When there’s a submit button and it doesn’t say submit, I cannot click on it.”</p></blockquote><figcaption>Participant 4 · excerpt</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="1" role="group" aria-roledescription="slide" aria-label="6 of 15" hidden><span class="affinity-theme">Digital barriers</span><blockquote><p>“Sometimes the form field is not labeled, so JAWS just says ‘button’ or ‘unlabeled.’ I don’t know if it wants my name or my birth date.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="1" role="group" aria-roledescription="slide" aria-label="7 of 15" hidden><span class="affinity-theme">Digital barriers</span><blockquote><p>“Well over 80… maybe even 90% of HTML forms are accessible… in contrast… less than 2% of PDF forms.”</p></blockquote><figcaption>Participant 1</figcaption><p class="quote-context">Participant’s personal estimate, not a measured accessibility rate or study statistic.</p></figure>
+<figure class="interview-quote affinity-slide" data-theme="2" role="group" aria-roledescription="slide" aria-label="8 of 15" hidden><span class="affinity-theme">Error recovery</span><blockquote><p>“Sometimes forms that are otherwise accessible do not do a good job reporting error messages non-visually or giving meaningful descriptions as to where I did something wrong.”</p></blockquote><figcaption>Participant 1</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="2" role="group" aria-roledescription="slide" aria-label="9 of 15" hidden><span class="affinity-theme">Error recovery</span><blockquote><p>“If required fields aren’t labeled, I only find out after submitting.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="2" role="group" aria-roledescription="slide" aria-label="10 of 15" hidden><span class="affinity-theme">Error recovery</span><blockquote><p>“I have to manually search the whole form to find what I missed.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="3" role="group" aria-roledescription="slide" aria-label="11 of 15" hidden><span class="affinity-theme">AI assistance</span><p class="interview-note">Participant 1 reported using JAWS AI Labeler to identify unlabeled buttons, fields, or controls.</p><figcaption>Participant 1 · summarized interview note</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="3" role="group" aria-roledescription="slide" aria-label="12 of 15" hidden><span class="affinity-theme">AI assistance</span><blockquote><p>“Haven’t used it. I do ChatGPT, but I don’t know if they have that option on there. But no, I haven’t even seen that available.”</p></blockquote><figcaption>Participant 4 · on AI-assisted form tools</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="3" role="group" aria-roledescription="slide" aria-label="13 of 15" hidden><span class="affinity-theme">AI assistance</span><blockquote><p>“Something that could verify everything is filled out correctly and spelled correctly. It would help a lot with PDFs.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="3" role="group" aria-roledescription="slide" aria-label="14 of 15" hidden><span class="affinity-theme">AI assistance</span><blockquote><p>“I would like a tool that could double-check my answers, like confirm my email or catch missing fields.”</p></blockquote><figcaption>Participant 2</figcaption></figure>
+<figure class="interview-quote affinity-slide" data-theme="3" role="group" aria-roledescription="slide" aria-label="15 of 15" hidden><span class="affinity-theme">AI assistance</span><p class="interview-note">Participant 1 envisioned AI that could take a form and produce a fully accessible version, similar to optical character recognition (OCR).</p><figcaption>Participant 1 · summarized interview note</figcaption></figure>
+      </div>
+      <div class="affinity-controls">
+        <button type="button" data-affinity-prev aria-label="Previous interview excerpt" aria-controls="affinity-deck">← Previous</button>
+        <span data-affinity-status role="status" aria-live="polite" aria-atomic="true">1 / 15 · Paper &amp; trust</span>
+        <button type="button" data-affinity-next aria-label="Next interview excerpt" aria-controls="affinity-deck">Next →</button>
+      </div>
+      <details class="affinity-notes"><summary>About these excerpts</summary><p>Anonymized interview excerpts grouped for this synthesis preview, not the original FigJam map. Spacing and obvious transcription typos were cleaned up. Summarized notes are labeled separately; numerical estimates reflect a participant’s perception, not measured results.</p></details>
+    </div>
   </section>
+
 
   <section class="cs-section insights" aria-labelledby="insights-title"><span class="section-number">07 / Key insights</span><h2 id="insights-title">Five barriers—and the opportunities they reveal</h2>
     <article class="insight"><span class="insight-num">01</span><div><h3>Paper Forms Eliminate Independence</h3><p>Paper forms almost always require sighted assistance. This can expose sensitive medical, financial, or personal information. Even braille-based solutions have limitations when staff members or other people cannot interpret braille.</p></div><aside><strong>Design opportunity</strong><p>Provide accessible digital alternatives and private assistance options for every paper-only process.</p></aside></article>
@@ -92,5 +122,6 @@
 
 <footer class="site-footer"><div class="footer-bottom"><span>© <span data-year></span> Ivy Wang — Chicago, IL</span><span>Researching for independence, privacy, and inclusion</span></div></footer>
 <script src="script.js?v=2"></script>
+<script src="affinity-quotes.js?v=1"></script>
 </body>
 </html>

@@ -81,3 +81,20 @@ th { background: #292039; color: var(--ink); }
 .concept-flow li, .prototype-grid ul { border-color: var(--blue); }
 .tower-shape { background: linear-gradient(90deg, #30233e 0 40%, #715784 40% 60%, #30233e 60%); }
 .future { background: linear-gradient(var(--paper), var(--paper-2)); }
+
+/* Earlier reflow keeps the larger text out of narrow diagram columns. */
+@media(max-width:1100px){
+ .process-flow,.wn-flow,.analysis-flow,.proposed ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .project-facts,.wn-facts,.hs-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .four-cards,.three-cards,.growth-grid,.principle-grid,.decision-grid,.tech-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ .process-flow,.wn-flow,.analysis-flow,.proposed ol,.project-facts,.wn-facts,.hs-facts,
+ .four-cards,.three-cards,.growth-grid,.principle-grid,.decision-grid,.tech-grid,
+ .overview,.method-pair,.two-col,.phase-grid,.persona-grid,.limits-grid{grid-template-columns:minmax(0,1fr)}
+ .case-nav a{gap:16px;flex-wrap:wrap}
+ .search-visual{padding:24px}.search-visual div{flex-wrap:wrap}
+ .fake-label small{float:none;display:block}
+ .commerce-visual{padding:18px;gap:10px}.commerce-visual span{overflow-wrap:anywhere}
+ .ghost-city{gap:12px;max-width:100%}.ghost-city span{padding:60px 12px 12px}.ghost-city i{width:70px;height:70px;flex-shrink:0}
+}

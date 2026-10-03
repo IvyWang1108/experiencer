@@ -1,0 +1,22 @@
+/* Match the homepage palette without importing its constellation layout. */
+body[data-page="work"] {
+  color-scheme: dark;
+  --paper: #08090e;
+  --paper-2: #12141e;
+  --ink: #f0ecdf;
+  --ink-soft: #c7c6cf;
+  --ink-faint: #9293a3;
+  --line: #2c2c3b;
+  --blue: #d0b5ef;
+  --ochre: #a9a6b7;
+  --stamp: #f5d6af;
+  background: var(--paper);
+  color: var(--ink);
+}
+.site-nav {
+  background: rgba(8,9,14,.85);
+  border-bottom-color: #ffffff0f;
+}
+.site-nav .mark span { font-size: 1rem; }
+.eyebrow::before { box-shadow: 0 0 10px #d0b5ef77; }
+.site-footer { background: var(--paper); }

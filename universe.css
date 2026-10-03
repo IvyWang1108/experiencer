@@ -1,13 +1,13 @@
 /* A quiet universe, with stable project targets and discoverable stars. */
 body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-faint:#9293a3;--line:#2c2c3b;--blue:#d0b5ef;background:#08090e;color:var(--ink)}
 .site-nav{background:rgba(8,9,14,.85);border-bottom:1px solid #ffffff0f}
-.site-nav .mark span{font-size:.8rem}
+.site-nav .mark span{font-size:1rem}
 .universe{position:relative;isolation:isolate;min-height:850px;height:100svh;max-height:1200px;overflow:hidden;background:radial-gradient(ellipse at 50% 53%,#30283e44,transparent 50%),#08090e}
 .starfield{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1}
 .universe-intro{position:absolute;top:calc(var(--nav-h) + 34px);width:100%;text-align:center;padding:0 22px;pointer-events:none}
-.eyebrow{font-family:var(--f-mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:#a9a6b7}
+.eyebrow{font-family:var(--f-mono);font-size:1rem;text-transform:uppercase;letter-spacing:.2em;color:#a9a6b7}
 .universe-intro h1{font-size:clamp(2.7rem,5vw,5rem);font-weight:300;letter-spacing:-.035em;margin:6px 0}
-.universe-intro>p:last-child{font-size:.85rem;color:#b5b2c1}
+.universe-intro>p:last-child{font-size:1rem;color:#b5b2c1}
 .project-cluster{position:absolute;left:50%;top:54%;width:660px;height:370px;transform:translate(-50%,-50%);z-index:3}
 .project-particle{position:absolute;display:flex;align-items:center;flex-direction:column;justify-content:center;gap:5px;min-height:62px;width:172px;padding:7px 5px;color:#e7e1ed;text-align:center;cursor:pointer;transform:translate(-50%,-50%);border:0;background:none;transition:color .2s}
 .particle-spark{height:78px;width:78px;display:block;flex:none;border-radius:50%;background:#242335;border:1px solid #ead9ff99;box-shadow:0 0 9px #e7d0ff55,0 0 29px #b48fe633,0 0 54px #b48fe618;transition:box-shadow .25s,transform .25s;animation:orb-float 6s ease-in-out infinite alternate;overflow:hidden}
@@ -16,8 +16,8 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .particle-3 .particle-spark,.particle-6 .particle-spark{animation-delay:-4s}
 .particle-4 .particle-spark,.particle-7 .particle-spark{animation-delay:-1s}
 @keyframes orb-float{from{transform:translateY(-3px)}to{transform:translateY(3px)}}
-.particle-name{font-size:.71rem;letter-spacing:.025em;text-shadow:0 2px 7px #000,0 0 18px #000}
-.particle-detail{font-family:var(--f-mono);font-size:.53rem;color:#c6b7d9;opacity:0;transition:opacity .2s;text-shadow:0 0 9px #000}
+.particle-name{font-size:1rem;letter-spacing:.025em;text-shadow:0 2px 7px #000,0 0 18px #000}
+.particle-detail{font-family:var(--f-mono);font-size:1rem;color:#c6b7d9;opacity:0;transition:opacity .2s;text-shadow:0 0 9px #000}
 .project-particle:hover,.project-particle:focus-visible{color:#fff}
 .project-particle:hover .particle-detail,.project-particle:focus-visible .particle-detail{opacity:1}
 .project-particle:hover .particle-spark,.project-particle:focus-visible .particle-spark{animation-play-state:paused;scale:1.08;box-shadow:0 0 13px #eadbff99,0 0 38px #cfabff66}
@@ -26,17 +26,17 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .fact-star{position:absolute;width:54px;height:54px;z-index:4;display:grid;place-items:center;color:#817e95;cursor:pointer}
 .star-cross{font-size:19px;transition:color .3s,text-shadow .3s,transform .3s}
 .fact-label{position:absolute;top:46px;width:175px;font-family:var(--f-display);font-size:1.1rem;color:#eee7fa;opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .25s,transform .25s;pointer-events:none;text-shadow:0 2px 10px #000}
-.fact-label small{display:block;margin-top:5px;font-family:var(--f-body);font-size:.65rem;color:#a7a1b7}
+.fact-label small{display:block;margin-top:5px;font-family:var(--f-body);font-size:1rem;color:#a7a1b7}
 .fact-star:hover .star-cross,.fact-star:focus-visible .star-cross,.fact-star.is-lit .star-cross{color:#fff4de;text-shadow:0 0 12px #ffe5c0,0 0 35px #c7a0ff;transform:rotate(45deg) scale(1.35)}
 .fact-star:hover .fact-label,.fact-star:focus-visible .fact-label,.fact-star.is-lit .fact-label{opacity:1;visibility:visible;transform:translateY(0)}
 .fact-1{left:13%;top:28%}.fact-2{right:12%;top:26%}.fact-3{left:5%;top:65%}.fact-4{right:5%;top:64%}.fact-5{left:23%;top:82%}.fact-6{right:21%;top:83%}
 .fact-3 .fact-label{left:0;text-align:left}.fact-4 .fact-label{right:0;text-align:right}
-.universe-guide{position:absolute;bottom:99px;width:100%;text-align:center;color:#d2c9db;font-size:.7rem;letter-spacing:.03em;padding:0 20px;pointer-events:none}
-.universe-guide small{display:block;color:#8d879e;font-size:.61rem;margin:8px auto 0;max-width:560px;line-height:1.6}
+.universe-guide{position:absolute;bottom:99px;width:100%;text-align:center;color:#d2c9db;font-size:1rem;letter-spacing:.03em;padding:0 20px;pointer-events:none}
+.universe-guide small{display:block;color:#8d879e;font-size:1rem;margin:8px auto 0;max-width:560px;line-height:1.6}
 .universe-guide a{pointer-events:auto;color:#d2c9db;text-decoration:underline;text-underline-offset:3px}
 .universe-guide a:hover{color:#fff}
 .guide-dot{display:inline-block;width:4px;height:4px;background:#f5d6af;border-radius:50%;margin:0 8px 2px 0}
-.universe-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);padding:10px;font-family:var(--f-mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.16em;color:#aaa2b9}
+.universe-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);padding:10px;font-family:var(--f-mono);font-size:1rem;text-transform:uppercase;letter-spacing:.16em;color:#aaa2b9}
 .universe-about{max-width:850px;margin:auto;padding:90px var(--edge);text-align:center}
 .universe-about>p:last-child{font-family:var(--f-display);font-weight:300;font-size:clamp(1.15rem,2vw,1.7rem);line-height:1.6;color:#c2bacb;margin-top:25px}
 .index-strip{max-width:1200px;margin:auto;padding:40px var(--edge) 90px;scroll-margin-top:100px}
@@ -48,11 +48,53 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
  .universe{min-height:880px;height:100svh}
  .universe-intro{top:100px}
  .project-cluster{width:100%;max-width:450px;height:350px;top:52%}
- .project-particle{width:112px}.particle-name{font-size:.64rem}.particle-detail{font-size:.48rem}
+ .project-particle{width:112px}.particle-name{font-size:1rem}.particle-detail{font-size:1rem}
  .particle-spark{height:58px;width:58px}
  .particle-1{left:24%;top:12%}.particle-2{left:73%;top:15%}.particle-3{left:81%;top:48%}.particle-4{left:73%;top:81%}.particle-5{left:33%;top:96%}.particle-6{left:20%;top:62%}.particle-7{left:45%;top:39%}
  .fact-1{left:9%;top:26%}.fact-2{right:9%;top:26%}.fact-3{left:9%;top:73%}.fact-4{right:9%;top:73%}.fact-5,.fact-6{display:none}
- .fact-label{width:145px;font-size:.95rem}.fact-1 .fact-label{left:0}.fact-2 .fact-label{right:0}
+ .fact-label{width:145px;font-size:1rem}.fact-1 .fact-label{left:0}.fact-2 .fact-label{right:0}
  .universe-guide{bottom:66px}.universe-scroll{bottom:12px}
 }
+/* Room for readable labels without compressing the constellation. */
+.universe{height:auto;min-height:0;max-height:none;padding:calc(var(--nav-h) + 48px) var(--edge) 32px;overflow:clip}
+.universe-intro{position:relative;top:auto;padding:0;max-width:850px;margin:auto}
+.universe-intro>p:last-child{font-size:1.125rem;line-height:1.65;max-width:55ch;margin:16px auto 0}
+.eyebrow{letter-spacing:.1em;line-height:1.6}
+.project-cluster{position:relative;left:auto;top:auto;transform:none;width:min(800px,100%);height:600px;margin:64px auto 40px}
+.project-particle{width:190px;gap:8px;padding:10px;line-height:1.4}
+.particle-spark{width:96px;height:96px}
+.particle-name{font-size:1.125rem}
+.particle-detail{font-size:1rem;opacity:1}
+.universe-guide{position:relative;bottom:auto;padding:0;max-width:720px;margin:0 auto;font-size:1.5rem;line-height:1.4}
+.universe-guide small{font-size:1.125rem;max-width:60ch;line-height:1.65;margin-top:16px}
+.universe-scroll{position:relative;display:table;left:auto;bottom:auto;transform:none;margin:24px auto 0;font-size:1rem}
+.fact-label{width:200px}.fact-label small{font-size:1rem}
+.fact-5,.fact-6{top:75%}
+/* Absolute desktop particles extend below the cluster's nominal box.
+   Reserve space for their full labels and glow before the research heading. */
+@media(min-width:1281px){
+ .project-cluster{margin-bottom:clamp(160px,12vw,208px)}
+}
+@media(max-width:1280px){
+ .project-cluster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px 20px;height:auto;margin:64px auto;max-width:760px}
+ .project-particle{position:relative;left:auto;top:auto;transform:none;width:100%;justify-content:flex-start}
+ .fact-constellation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:760px;margin:0 auto 48px}
+ .fact-constellation .fact-star{display:none}
+ .fact-constellation .fact-1,.fact-constellation .fact-2,.fact-constellation .fact-3{display:grid;position:relative;inset:auto;width:100%;height:auto;min-height:54px;margin:0;padding:12px 4px;align-content:start;gap:12px}
+ .universe{text-align:center}
+ .fact-constellation .fact-label{position:static;width:100%;min-width:0;max-width:none;text-align:center!important;transform:none;overflow-wrap:anywhere}
+ .fact-star:hover .fact-label,.fact-star:focus-visible .fact-label,.fact-star.is-lit .fact-label{transform:none}
+ .project-particle,.particle-name,.particle-detail{min-width:0;max-width:100%;overflow-wrap:anywhere}
+}
+@media(max-width:600px){
+ .project-cluster{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 12px}
+ .particle-spark{width:80px;height:80px}
+ .project-particle{padding:6px 0}
+ .particle-name{font-size:1rem}
+ .universe-intro h1{font-size:3rem}
+ .fact-constellation{grid-template-columns:1fr;gap:8px;max-width:360px}
+ .fact-constellation .fact-star{grid-template-columns:44px minmax(0,1fr);align-items:center;text-align:left}
+ .fact-constellation .fact-label{text-align:left!important}
+}
+@media(max-width:380px){.project-cluster{grid-template-columns:1fr;max-width:260px}.universe-scroll{letter-spacing:.08em}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
