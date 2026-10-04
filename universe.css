@@ -60,6 +60,7 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .universe-intro{position:relative;top:auto;padding:0;max-width:850px;margin:auto}
 .universe-intro>p:last-child{font-size:1.125rem;line-height:1.65;max-width:55ch;margin:16px auto 0}
 .eyebrow{letter-spacing:.1em;line-height:1.6}
+.universe-intro .eyebrow::before{content:none;display:none}
 .project-cluster{position:relative;left:auto;top:auto;transform:none;width:min(800px,100%);height:600px;margin:64px auto 40px}
 .project-particle{width:190px;gap:8px;padding:10px;line-height:1.4}
 .particle-spark{width:96px;height:96px}
@@ -67,6 +68,9 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .particle-detail{font-size:1rem;opacity:1}
 .universe-guide{position:relative;bottom:auto;padding:0;max-width:720px;margin:0 auto;font-size:1.5rem;line-height:1.4}
 .universe-guide small{font-size:1.125rem;max-width:60ch;line-height:1.65;margin-top:16px}
+.universe-intro .universe-guide{margin-top:28px}
+.strip-head{flex-wrap:wrap}
+.project-list-intro{flex-basis:100%;margin-top:12px;color:var(--ink-soft);font-size:1.125rem;line-height:1.65}
 .universe-scroll{position:relative;display:table;left:auto;bottom:auto;transform:none;margin:24px auto 0;font-size:1rem}
 .fact-label{width:200px}.fact-label small{font-size:1rem}
 .fact-5,.fact-6{top:75%}
