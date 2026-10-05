@@ -95,10 +95,14 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
  .particle-spark{width:80px;height:80px}
  .project-particle{padding:6px 0}
  .particle-name{font-size:1rem}
- .universe-intro h1{font-size:3rem}
+ .universe-intro h1{font-size:clamp(1.5rem,5vw,2rem)}
  .fact-constellation{grid-template-columns:1fr;gap:8px;max-width:360px}
  .fact-constellation .fact-star{grid-template-columns:44px minmax(0,1fr);align-items:center;text-align:left}
  .fact-constellation .fact-label{text-align:left!important}
 }
 @media(max-width:380px){.project-cluster{grid-template-columns:1fr;max-width:260px}.universe-scroll{letter-spacing:.08em}}
+.universe-intro{max-width:1100px}
+.universe-intro h1{font-size:clamp(1.5rem,3vw,3.2rem);line-height:1.08;margin:18px auto;text-wrap:balance}
+@media(min-width:700px){.universe-intro h1>span{display:block;white-space:nowrap}}
+@media(max-width:699px){.universe-intro h1{font-size:clamp(1.5rem,5vw,2rem)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

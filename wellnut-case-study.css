@@ -19,3 +19,9 @@
 @media(max-width:800px){.character-gallery{grid-template-columns:minmax(0,1fr);max-width:680px;width:100%;margin-inline:auto;gap:28px}.character-gallery a{aspect-ratio:auto;min-height:0}.character-gallery img{width:100%;height:auto}}
 @media(max-width:800px){.character-gallery.vr-experience-gallery a{aspect-ratio:auto;height:320px}.vr-experience-gallery img{width:auto;height:auto;max-height:100%;max-width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:is(#reset-wellnut,#download-wellnut){padding:12px 18px;border:1px solid #d0b5ef66;border-radius:24px;background:#21192f;color:#e8dcf6;font:inherit;cursor:pointer}
+:is(#reset-wellnut,#download-wellnut):hover{background:#392849}
+#wellnut-model:focus-visible{outline:2px solid #d0b5ef;outline-offset:5px}
+.wn-model-hero{min-width:0;align-self:center;padding:20px 0;color:var(--ink-soft)}
+.wn-model-hero p{font-size:.9rem;line-height:1.6;margin:14px 0}
+.wn-model-hero .wn-actions{margin-top:16px}
