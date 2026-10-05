@@ -40,6 +40,11 @@ body[data-page="about"]{
   mix-blend-mode:screen;opacity:.65;}
 .about-photo figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:16px;font-size:1rem;color:#d9cfdf}
 .about-photo figcaption span{color:#9894aa}
+.hologram-projector{display:block;width:100%;height:auto;margin-top:-10px;overflow:visible;pointer-events:none}
+.projector-lens{filter:drop-shadow(0 0 7px #bbdfff);animation:projector-glow 4s ease-in-out infinite alternate}
+.projection-light{animation:projector-glow 4s ease-in-out infinite alternate}
+@keyframes projector-glow{from{opacity:.65}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.projector-lens,.projection-light{animation:none}}
 .about-copy p{color:#c7c6cf;line-height:1.75;font-size:1.125rem}
 .about-copy h2{font-weight:400;color:#eee5f4}
 .ocean-note{margin:34px 0 10px;padding:4px 0 4px 22px;border-left:1px solid #a5c2df66}
