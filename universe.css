@@ -105,4 +105,7 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .universe-intro h1{font-size:clamp(1.5rem,3vw,3.2rem);line-height:1.08;margin:18px auto;text-wrap:balance}
 @media(min-width:700px){.universe-intro h1>span{display:block;white-space:nowrap}}
 @media(max-width:699px){.universe-intro h1{font-size:clamp(1.5rem,5vw,2rem)}}
+.project-particle .particle-name{position:static;opacity:1;pointer-events:none;transform:none;font:400 1.125rem/1.35 var(--f-display);color:#eee5f4;text-shadow:none}
+.project-particle .particle-detail{font-size:.875rem;line-height:1.5;margin-top:2px;opacity:1}
+.project-particle:is(:hover,:focus-visible) .particle-spark{scale:1.04;box-shadow:0 0 20px #d0b5ef55}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
