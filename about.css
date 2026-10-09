@@ -41,6 +41,9 @@ body[data-page="about"]{
 .about-photo figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:16px;font-size:1rem;color:#d9cfdf}
 .about-photo figcaption span{color:#9894aa}
 .hologram-projector{display:block;width:100%;height:auto;margin-top:-10px;overflow:visible;pointer-events:none}
+.about-photo .rat-story{display:block;text-align:center;padding:12px 8px 0;font-size:1rem;line-height:1.65}
+.rat-story strong{display:block;color:#decbed;font-family:var(--f-display);font-size:1.2rem;font-weight:400;margin-bottom:8px}
+.about-photo .rat-story span{display:block;color:#aba6ba}
 .projector-lens{filter:drop-shadow(0 0 7px #bbdfff);animation:projector-glow 4s ease-in-out infinite alternate}
 .projection-light{animation:projector-glow 4s ease-in-out infinite alternate}
 @keyframes projector-glow{from{opacity:.65}to{opacity:1}}

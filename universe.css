@@ -74,10 +74,17 @@ body[data-page="home"]{--paper:#08090e;--ink:#f0ecdf;--ink-soft:#c7c6cf;--ink-fa
 .universe-scroll{position:relative;display:table;left:auto;bottom:auto;transform:none;margin:24px auto 0;font-size:1rem}
 .fact-label{width:200px}.fact-label small{font-size:1rem}
 .fact-5,.fact-6{top:75%}
-/* Absolute desktop particles extend below the cluster's nominal box.
-   Reserve space for their full labels and glow before the research heading. */
+/* A balanced three-over-two constellation, without empty removed-project slots. */
+@media(min-width:601px){
+ .universe .project-cluster{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:40px 32px;width:min(880px,100%);max-width:880px;height:auto;margin:48px auto 56px}
+ .universe .project-particle{position:relative;inset:auto;transform:none;flex:0 0 calc((100% - 64px)/3);width:auto;min-width:0;justify-content:flex-start}
+}
 @media(min-width:1281px){
- .project-cluster{margin-bottom:clamp(160px,12vw,208px)}
+ .fact-constellation{position:relative;display:flex;justify-content:space-between;align-items:center;max-width:960px;min-height:110px;margin:0 auto 32px}
+ .fact-constellation .fact-star,.fact-constellation .yogurt-star{position:relative;inset:auto;flex:none}
+ .fact-constellation .fact-2,.fact-constellation .fact-5{translate:0 -16px}
+ .fact-constellation .fact-3,.fact-constellation .fact-6{translate:0 12px}
+ .fact-constellation .fact-label{top:54px}
 }
 @media(max-width:1280px){
  .project-cluster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px 20px;height:auto;margin:64px auto;max-width:760px}

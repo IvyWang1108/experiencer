@@ -1,0 +1,35 @@
+#yogurt-gallery{box-sizing:border-box;width:min(1000px,94vw);max-height:90dvh;padding:clamp(20px,4vw,48px);border:1px solid #cbb2ff44;border-radius:24px;background:#12101d;color:#eee8f4;overflow:auto;box-shadow:0 24px 100px #0009}
+#yogurt-gallery::backdrop{background:#06070dd9;backdrop-filter:blur(8px)}
+.yogurt-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;color:#cbb2ff;font-size:14px}
+#yogurt-close{padding:10px 16px;border:1px solid #cbb2ff66;border-radius:24px;background:#211a30;color:#eee8f4;cursor:pointer;font:inherit}
+#yogurt-close:focus-visible{outline:2px solid #e2cdff;outline-offset:4px}
+#yogurt-title{font-size:clamp(30px,5vw,52px);line-height:1.12;margin:28px 0 16px}
+.yogurt-intro{max-width:620px;font-size:18px;line-height:1.6;color:#c6bfd1;margin-bottom:32px}
+.yogurt-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 32px;padding:18px 10px 28px;align-items:start}
+.yogurt-photos figure{position:relative;margin:0;min-width:0;transform:rotate(-2deg)}
+.yogurt-photos figure:nth-child(even){transform:rotate(2deg);margin-top:42px}
+.yogurt-photos figure:nth-child(3n){width:90%;justify-self:center;transform:rotate(1.5deg)}
+.yogurt-photos figure:nth-child(4n){transform:rotate(-2.5deg)}
+.yogurt-photos figure::before{content:"";position:absolute;z-index:2;top:-9px;left:35%;width:30%;height:20px;background:#c6b0dc70;transform:rotate(-5deg);clip-path:polygon(2% 0,98% 4%,100% 88%,3% 100%,0 65%);pointer-events:none}
+.yogurt-frame{display:block;position:relative;overflow:hidden;border-radius:10px;aspect-ratio:1;background:#201c27;isolation:isolate}
+.yogurt-photos img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 56%;border-radius:0}
+.yogurt-photos figure:nth-child(2) img{object-position:50% 77%}
+.yogurt-photos figure:nth-child(3) img{object-position:50% 57%}
+.yogurt-photos figure:nth-child(4) img{object-position:50% 54%}
+.yogurt-photos figure:nth-child(5) img{object-position:50% 52%}
+.yogurt-photos figure:nth-child(6) img{object-position:50% 53%}
+.yogurt-photos figure:nth-child(7) img{object-position:50% 58%}
+.yogurt-photos figure:nth-child(8) img{object-position:50% 59%}
+.yogurt-frame::after,.yogurt-frame::before{content:none}
+.yogurt-photos figcaption{font:italic 18px/1.4 "Bradley Hand","Segoe Print","Comic Sans MS",cursive;color:#d8c9e6;padding:12px 4px 0}
+body.yogurt-open{overflow:hidden}
+.yogurt-star{position:absolute;z-index:4;width:64px;height:64px;padding:8px;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;border-radius:50%}
+.yogurt-star img{display:block;width:44px;height:44px;border-radius:50%;opacity:.78;filter:saturate(.65) drop-shadow(0 0 8px #cbb2ff66);transition:transform .3s ease,filter .3s ease,opacity .3s ease}
+.yogurt-star span{position:absolute;right:0;top:0;color:#dbc6f4;font-size:17px;transition:transform .3s ease;text-shadow:0 0 12px #cbb2ff}
+.yogurt-star:is(:hover,:focus-visible) img{opacity:1;transform:translateY(-3px) rotate(-8deg) scale(1.12);filter:saturate(.9) drop-shadow(0 0 14px #cbb2ffaa)}
+.yogurt-star:is(:hover,:focus-visible) span{transform:rotate(35deg) scale(1.2)}
+.yogurt-star:focus-visible{outline:2px solid #dbc6f4;outline-offset:4px}
+@media(max-width:1280px){.fact-constellation .yogurt-star{position:relative;inset:auto;justify-self:center;align-self:start}}
+@media(prefers-reduced-motion:reduce){.yogurt-star img,.yogurt-star span{transition:none}.yogurt-star:is(:hover,:focus-visible) img,.yogurt-star:is(:hover,:focus-visible) span{transform:none}}
+@media(max-width:700px){.yogurt-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px;padding:12px 4px 24px}.yogurt-photos figure:nth-child(even){margin-top:24px}.yogurt-photos figcaption{font-size:16px}}
+@media(max-width:380px){.yogurt-photos{grid-template-columns:1fr;gap:30px}.yogurt-photos figure:nth-child(even){margin-top:0}.yogurt-photos figure{width:94%;justify-self:center}}

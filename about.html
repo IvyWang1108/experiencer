@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Ivy Wang</title>
 <link rel="stylesheet" href="styles.css?v=responsive-2">
-<link rel="stylesheet" href="about.css?v=projector-1">
+<link rel="stylesheet" href="about.css?v=rat-2">
 </head>
 <body data-page="about">
 <div class="about-atmosphere" aria-hidden="true">
@@ -38,41 +38,48 @@
       <div class="portrait-water">
         <img src="assets/profile-pic.jpeg" alt="Halftone portrait of Ivy Wang" width="512" height="512">
       </div>
-      <svg class="hologram-projector" viewBox="0 0 320 190" aria-hidden="true" focusable="false">
+      <svg class="hologram-projector rat-lantern" viewBox="0 0 320 220" role="img" aria-labelledby="rat-title">
+        <title id="rat-title">A curious little rat shining a flashlight up at Ivy’s portrait</title>
         <defs>
-          <linearGradient id="projection-beam" x2="0" y2="1"><stop stop-color="#bcecff" stop-opacity="0"/><stop offset="1" stop-color="#c9b5ff" stop-opacity=".3"/></linearGradient>
-          <linearGradient id="projector-shell" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ddd4f3"/><stop offset=".35" stop-color="#9d91bc"/><stop offset=".75" stop-color="#655d83"/><stop offset="1" stop-color="#34364e"/></linearGradient>
-          <radialGradient id="lens-glass"><stop stop-color="#fff"/><stop offset=".3" stop-color="#d8f9ff"/><stop offset=".7" stop-color="#9dacf1"/><stop offset="1" stop-color="#49416b"/></radialGradient>
+          <linearGradient id="rat-beam" x1="0" y1="0" x2="0.3" y2="1"><stop stop-color="#dceaff" stop-opacity="0"/><stop offset=".65" stop-color="#e0d4ff" stop-opacity=".09"/><stop offset="1" stop-color="#fff2ca" stop-opacity=".4"/></linearGradient>
+          <radialGradient id="rat-fur" cx=".3" cy=".2" r=".85"><stop stop-color="#ded4e4"/><stop offset=".55" stop-color="#a89bb8"/><stop offset="1" stop-color="#655e7b"/></radialGradient>
+          <linearGradient id="rat-torch" x2="1" y2="1"><stop stop-color="#c4b3df"/><stop offset=".45" stop-color="#7e6f9d"/><stop offset="1" stop-color="#423a5b"/></linearGradient>
         </defs>
-        <path class="projection-light" d="M48 0H272L180 85H140Z" fill="url(#projection-beam)"/>
-        <path d="M73 8L141 80M247 8L179 80" fill="none" stroke="#c8c2fb" stroke-opacity=".22"/>
-        <ellipse cx="160" cy="174" rx="76" ry="10" fill="#b4a2ef" opacity=".12"/>
-        <!-- Little boots, a waving arm, and a slightly overqualified antenna. -->
-        <rect x="112" y="151" width="29" height="19" rx="9" fill="#42435d" stroke="#aaa0cb"/>
-        <rect x="178" y="151" width="29" height="19" rx="9" fill="#42435d" stroke="#aaa0cb"/>
-        <path d="M96 128Q73 139 80 151M223 124Q244 122 244 101" fill="none" stroke="#8d84af" stroke-width="8" stroke-linecap="round"/>
-        <path d="M238 98l-4-7m10 7 1-11m4 13 7-6" stroke="#d4c9ef" stroke-width="4" stroke-linecap="round"/>
-        <path d="M213 92l9-26" stroke="#a59dbf" stroke-width="3"/>
-        <circle cx="224" cy="62" r="6" fill="#dfb1d9" stroke="#ffe5fa"/>
-        <rect x="94" y="86" width="132" height="75" rx="29" fill="url(#projector-shell)" stroke="#b5a9d0"/>
-        <path d="M101 126v8q0 21 27 21h65q24 0 26-20" fill="none" stroke="#292b43" stroke-opacity=".5" stroke-width="3"/>
-        <ellipse cx="160" cy="90" rx="64" ry="19" fill="#8e82ad" stroke="#ddd4ed" stroke-width="1.5"/>
-        <ellipse cx="160" cy="89" rx="48" ry="13" fill="#262c43" stroke="#b7bde2" stroke-width="2"/>
-        <ellipse class="projector-lens" cx="160" cy="86" rx="33" ry="9" fill="url(#lens-glass)"/>
-        <ellipse cx="156" cy="83" rx="18" ry="3" fill="#fff" opacity=".65"/>
-        <path d="M117 89h7m72 0h7M157 76h6" stroke="#8be4ea" stroke-width="2" stroke-linecap="round"/>
-        <rect x="121" y="109" width="78" height="37" rx="15" fill="#191e31" stroke="#bcb4d6" stroke-opacity=".65"/>
-        <ellipse cx="141" cy="122" rx="4" ry="6" fill="#c6f4ff"/>
-        <path d="M171 123q5-7 10 0" fill="none" stroke="#c6f4ff" stroke-width="3" stroke-linecap="round"/>
-        <ellipse cx="133" cy="132" rx="5" ry="2.5" fill="#e3a8cf" opacity=".65"/>
-        <ellipse cx="186" cy="132" rx="5" ry="2.5" fill="#e3a8cf" opacity=".65"/>
-        <path d="M151 131q9 13 18 0Z" fill="#c2eaff"/>
-        <path d="M156 136q5-3 9 0" stroke="#efb7d9" stroke-width="3"/>
-        <g stroke="#484763" stroke-width="2" stroke-linecap="round"><path d="M104 119h7m-7 5h7m-7 5h7"/><path d="M209 129h7m-7 5h7m-7 5h7"/></g>
-        <circle cx="212" cy="117" r="4" fill="#b5f3d9" stroke="#535776"/>
-        <circle cx="110" cy="143" r="2" fill="#d8cfea"/><circle cx="210" cy="146" r="2" fill="#d8cfea"/>
-        <path d="M145 152h30" stroke="#d8d1ee" stroke-opacity=".5" stroke-linecap="round"/>
+        <path class="projection-light" d="M35 -20H265L161 108L145 104Z" fill="url(#rat-beam)"/>
+        <ellipse cx="174" cy="204" rx="92" ry="9" fill="#c5a9ed" opacity=".08"/>
+        <!-- A curled tail, oversized ears, and a very serious little flashlight. -->
+        <path d="M213 181C280 210 297 163 266 158C248 155 250 172 261 171" fill="none" stroke="#a789a3" stroke-width="9" stroke-linecap="round"/>
+        <path d="M213 180C278 206 292 167 266 162" fill="none" stroke="#e3b8cb" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+        <ellipse cx="196" cy="163" rx="40" ry="39" fill="url(#rat-fur)" transform="rotate(-15 196 163)"/>
+        <ellipse cx="189" cy="171" rx="23" ry="25" fill="#ddd1df" opacity=".45"/>
+        <ellipse cx="210" cy="198" rx="19" ry="7" fill="#bb9bad"/>
+        <ellipse cx="170" cy="199" rx="16" ry="6" fill="#d5b2c5"/>
+        <path d="M203 197l3 4m2-5 3 4m-45-2 3 3" stroke="#776379" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="211" cy="99" r="26" fill="url(#rat-fur)"/>
+        <circle cx="211" cy="99" r="18" fill="#c39cb5"/>
+        <path d="M199 99q11-17 22-1" fill="none" stroke="#ead0de" stroke-width="3" opacity=".65"/>
+        <circle cx="172" cy="91" r="23" fill="url(#rat-fur)"/>
+        <circle cx="172" cy="91" r="15" fill="#c39cb5"/>
+        <path d="M169 108Q207 96 220 123Q232 150 199 155Q174 155 143 135Q137 126 150 120Z" fill="url(#rat-fur)"/>
+        <path d="M144 129Q166 126 174 143Q153 142 144 135Z" fill="#dfc7d4"/>
+        <ellipse cx="144" cy="128" rx="6" ry="4.5" fill="#b986a0"/>
+        <ellipse cx="180" cy="122" rx="5" ry="7" fill="#242232" transform="rotate(15 180 122)"/>
+        <circle cx="179" cy="119" r="2" fill="#fff0e2"/>
+        <ellipse cx="193" cy="138" rx="8" ry="4" fill="#d9a2bf" opacity=".6"/>
+        <path d="M154 137q7 8 15 5M151 133l-22-6m24 10-25 4m30-1-18 11" fill="none" stroke="#d8c4d8" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M196 157Q178 175 162 154" fill="none" stroke="#a99ab6" stroke-width="12" stroke-linecap="round"/>
+        <g transform="rotate(-18 155 133)">
+          <rect x="146" y="109" width="18" height="55" rx="6" fill="url(#rat-torch)" stroke="#dac9e7" stroke-width="1"/>
+          <path d="M141 107l5 13h18l5-13-4-8h-20Z" fill="#8c7b9f" stroke="#dac9e7"/>
+          <ellipse class="projector-lens" cx="155" cy="101" rx="11" ry="4" fill="#fff1c5"/>
+          <rect x="151" y="131" width="7" height="10" rx="3" fill="#d9c1e8"/>
+          <path d="M149 151h12m-12 5h12" stroke="#c0accf" stroke-width="1.5"/>
+        </g>
+        <ellipse cx="162" cy="150" rx="9" ry="6" fill="#d9b6ca" transform="rotate(-20 162 150)"/>
+        <path d="M158 147l3 5m1-7 3 5" stroke="#9c7e97" stroke-width="1" stroke-linecap="round"/>
+        <path d="M209 116l4-3m-7-2 3-4" stroke="#eee1ed" stroke-opacity=".4" stroke-linecap="round"/>
       </svg>
+      <figcaption class="rat-story"><strong>A little light, a lot of curiosity.</strong><span>This little explorer is a reminder to follow my curiosity, look a little closer, and find something worth noticing—even in the quiet corners.</span></figcaption>
     </figure>
     <div class="about-copy">
       <p>

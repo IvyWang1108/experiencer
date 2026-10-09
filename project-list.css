@@ -1,5 +1,5 @@
 /* Shared project-list interaction for Home and Work. */
-.particle-spark{position:relative}
+.particle-spark{position:relative;overflow:hidden}
 .meteor-pass{position:absolute;inset:0;z-index:2;overflow:hidden;border-radius:50%;pointer-events:none}
 .meteor-pass::after{content:"";position:absolute;left:0;top:0;width:68%;height:2px;border-radius:999px;background:linear-gradient(90deg,transparent,#cbb2ff88 45%,#eee0ff 85%,#fff9df);box-shadow:0 0 6px #d0b5ef,0 0 12px #d0b5ef66;opacity:0;transform:translate(-110%,-20px) rotate(35deg);transform-origin:right center}
 .project-particle:is(:hover,:focus-visible) .meteor-pass::after,.project-collection a.entry-row:is(:hover,:focus-visible) .meteor-pass::after{animation:meteor-cross .8s cubic-bezier(.2,.65,.35,1) both}
@@ -9,9 +9,8 @@
 .project-collection a.entry-row:is(:hover,:focus-visible) .project-projection{transform:translate(-50%,-50%) scale(.92)!important;filter:drop-shadow(0 0 9px #d0b5ef44)!important}
 .project-collection{margin-top:48px}
 .project-category{display:grid;grid-template-columns:minmax(180px,.7fr) minmax(0,2fr);gap:clamp(24px,4vw,64px);padding:44px 0 56px;border-top:1px solid var(--line)}
-.category-number{font:1rem var(--f-mono);color:#d0b5ef}
-.category-heading h3{font:400 clamp(1.5rem,2.5vw,2rem)/1.2 var(--f-display);margin:16px 0}
-.category-heading p{color:var(--ink-faint);font-size:1rem;line-height:1.6;max-width:24ch}
+.category-heading h3{box-sizing:border-box;display:inline-block;max-width:100%;font:400 clamp(1.7rem,2.7vw,2.25rem)/1.15 var(--f-display);margin:0 0 20px;padding:22px 26px;border:1px solid #d0b5ef88;border-radius:50%;color:#e5d3fa;text-align:center;text-wrap:balance;box-shadow:0 0 24px #d0b5ef0c}
+.category-heading p{color:var(--ink-faint);font-size:1rem;line-height:1.6;max-width:24ch;margin:0}
 .category-projects{display:grid;grid-template-columns:1fr;gap:0;min-width:0}
 .project-collection .entry-row{grid-template-columns:64px minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:start;gap:12px 24px;padding:30px 16px 34px;min-width:0}
 .project-collection .entry-row .num{grid-column:1;grid-row:1/3;justify-self:start;width:64px;min-height:76px}
@@ -21,7 +20,6 @@
 .project-collection .entry-row .go{display:block;grid-column:3;grid-row:1/3;align-self:center;white-space:nowrap}
 .category-heading{align-self:start;position:sticky;top:calc(var(--nav-h) + 32px)}
 .category-projects .entry-row:first-child{padding-top:12px}
-.category-number{display:inline-block;border:1px solid #d0b5ef40;border-radius:50%;padding:14px;font-size:.875rem}
 .project-collection .project-coming-soon{cursor:default}
 .project-coming-soon:hover::before,.project-coming-soon:hover::after{opacity:0}
 .project-collection .project-coming-soon:hover .title{transform:none;color:var(--ink)}
